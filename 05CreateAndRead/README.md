@@ -37,3 +37,16 @@ db.bookData.insertOne({
 ```bash
 db.bookData.findOne()
 ```
+
+mongodb converts json data into bson data and then saves.
+saving BSON data is much more efficient as compare to JSON data.
+[JSON and BSON](https://www.mongodb.com/json-and-bson)
+
+we can also use key without using `""`.
+
+```js
+{
+    name:"nirav",
+    email:"n@n.com"
+}
+```
